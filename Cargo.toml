@@ -1,0 +1,15 @@
+[package]
+name = "embed_staticfile"
+version = "0.1.0"
+authors = ["Ueki Masaru <masaru.ueki@itage.co.jp>"]
+
+[dependencies]
+iron = "0.5"
+conduit-mime-types = "0.7"
+lazy_static = "0.2"
+hyper = "0.10"
+
+[dev-dependencies]
+router = "0.5"
+iron-test = "0.5"
+include_dir_bytes = "0.1"
