@@ -3,6 +3,11 @@ name = "embed_staticfile"
 version = "0.1.0"
 authors = ["Ueki Masaru <masaru.ueki@itage.co.jp>"]
 
+license = "MIT"
+description = "Create embedded static file handler for Iron"
+readme = "README.md"
+repository = "https://github.com/maueki/embed_staticfile.rs"
+
 [dependencies]
 iron = "0.5"
 conduit-mime-types = "0.7"
