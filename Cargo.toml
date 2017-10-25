@@ -1,6 +1,6 @@
 [package]
 name = "embed_staticfile"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Ueki Masaru <masaru.ueki@itage.co.jp>"]
 
 license = "MIT"
@@ -17,4 +17,4 @@ hyper = "0.10"
 [dev-dependencies]
 router = "0.5"
 iron-test = "0.5"
-include_dir_bytes = "0.1"
+include_dir_bytes = "0.2"

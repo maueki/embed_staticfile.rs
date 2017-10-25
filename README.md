@@ -6,8 +6,8 @@ Add this to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-include_dir_bytes = "0.1"
-embed_staticfile = "0.1"
+include_dir_bytes = "0.2"
+embed_staticfile = "0.2"
 ```
 
 and use them like this:

@@ -23,4 +23,23 @@ fn embed_staticfile_test() {
         },
         Err(e) => panic!("{}", e)
     }
+
+    match request::get("http://localhost:3000/b/b.txt", Headers::new(), &st) {
+        Ok(res) => {
+            let mut body = Vec::new();
+            res.body.unwrap().write_body(&mut body).unwrap();
+            assert_eq!(str::from_utf8(&body).unwrap(), "test2\n");
+        },
+        Err(e) => panic!("{}", e)
+    }
+
+    match request::get("http://localhost:3000/b/c%20.txt", Headers::new(), &st) {
+        Ok(res) => {
+            let mut body = Vec::new();
+            res.body.unwrap().write_body(&mut body).unwrap();
+            assert_eq!(str::from_utf8(&body).unwrap(), "test3\n");
+        },
+        Err(e) => panic!("{}", e)
+    }
+
 }
